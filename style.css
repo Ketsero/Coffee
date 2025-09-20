@@ -117,7 +117,7 @@ li{
     position: absolute;
     left: 584px;
     bottom: 293px;
-    opacity: 0;
+    opacity: 1;
     z-index: -3;
 }
 
@@ -245,7 +245,7 @@ p{
     position: absolute;
     top: 1px;
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
     transition: 2s;
 }
 
@@ -439,4 +439,59 @@ a{
     background-color: white;
     margin: 5px;
     margin-left: 10px;
+}
+
+@media (max-width: 1400px){
+    .div{
+        width: 200px;
+        height: 200px;
+        background-color:#532700;
+        margin-left: 48px;
+        position: absolute;
+        top: 1px;
+        z-index: 1;
+        opacity: 1;
+        transition: 2s;
+    }
+    
+    .div-2{
+        margin-left: 405px;
+    }
+    
+    .div-3{
+        margin-left: 761spx
+    }
+    
+    .div-4{
+        margin-left: 987px;
+    }
+    
+    .div-5{
+        margin-left: 1306px;
+    }
+    
+    .div-6{
+        margin-left: 29.5px;
+        top: 265px;
+    }
+    
+    .div-7{
+        margin-left: 349px;
+        top: 265px;
+    }
+    
+    .div-8{
+        margin-left: 668px;
+        top: 265px;
+    }
+    
+    .div-9{
+        margin-left: 987px;
+        top: 265px;
+    }
+    
+    .div-10{
+        margin-left: 1306px;
+        top: 265px;
+    }
 }
