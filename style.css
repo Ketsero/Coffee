@@ -117,7 +117,7 @@ li{
     position: absolute;
     left: 584px;
     bottom: 293px;
-    opacity: 1;
+    opacity: 0;
     z-index: -3;
 }
 
@@ -176,8 +176,9 @@ li{
 }
 
 .coffee-eclipse{
-    position: relative;
-    height: 1px;
+    position: absolute;
+    left: 500px;
+    bottom: 243px;
 }
 
 .back{
@@ -245,7 +246,7 @@ p{
     position: absolute;
     top: 1px;
     z-index: 1;
-    opacity: 1;
+    opacity: 0;
     transition: 2s;
 }
 
@@ -446,52 +447,153 @@ a{
         width: 200px;
         height: 200px;
         background-color:#532700;
-        margin-left: 48px;
+        margin-left: 29px;
         position: absolute;
         top: 1px;
         z-index: 1;
-        opacity: 1;
+        opacity: 0;
         transition: 2s;
     }
     
     .div-2{
-        margin-left: 405px;
+        margin-left: 306px;
     }
-    
+
     .div-3{
-        margin-left: 761spx
+        margin-left: 582.5px
     }
-    
+
     .div-4{
-        margin-left: 987px;
+        margin-left: 860px;
     }
     
     .div-5{
-        margin-left: 1306px;
+        margin-left: 1137px;
     }
     
     .div-6{
-        margin-left: 29.5px;
+        margin-left: 29px;
         top: 265px;
     }
     
     .div-7{
-        margin-left: 349px;
+        margin-left: 306px;
         top: 265px;
     }
     
     .div-8{
-        margin-left: 668px;
+        margin-left: 582.5px;
         top: 265px;
     }
     
     .div-9{
-        margin-left: 987px;
+        margin-left: 860px;
         top: 265px;
     }
     
     .div-10{
-        margin-left: 1306px;
+        margin-left: 1137px;
         top: 265px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .buy-article{
+        margin: 0;
+        position: relative;
+        background-color: rgb(150, 78, 0);
+        padding: 0;
+        padding-bottom: 80px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .image-div{
+        margin-bottom: 40px;
+    }
+
+    .cup{
+        margin-top: 100px;
+        width: 400px;
+        height: 420px;
+        z-index: 0;
+    }
+    
+    .cooked{
+        width: 130px;
+        height: 30px;
+        position: absolute;
+        left: 500px;
+        bottom: 293px;
+        opacity: 0;
+        z-index: -3;
+    }
+    
+    .coffee_cup{
+        text-align: center;
+    }
+    
+    .notcooked{
+        width: 130px;
+        height: 30px;
+        position: absolute;
+        left: 500px;
+        bottom: 243px;
+        z-index: -3;
+    }
+    
+    .coffee{
+        height: 150px;
+        width: 10px;
+        background-color: #532700;
+        position: absolute;
+        bottom: 370px;
+        left: 558.5px;
+        z-index: -2;
+    }
+    
+    .button{
+        width: 60px;
+        height: 60px;
+        border-radius:50px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: 250px;
+        left: 800px;
+    }
+    
+    .turn_on{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .back{
+        width: 130px;
+        height: 20px;
+        position: absolute;
+        bottom: 295px;
+        left: 584px;
+    }
+    
+    .krishka{
+        width: 140px;
+        height: 55px;
+        position: absolute;
+        bottom: 400px;
+        left: 495px;
+        z-index: -1;
+    }
+
+    .coffee-eclipse{
+        position: absolute;
+        left: 500px;
+        bottom: 243px;
     }
 }
