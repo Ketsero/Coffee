@@ -17,7 +17,7 @@ button.addEventListener('click', function() {
           cooked.style.opacity = "1";
 
           krishka.style.zIndex = "2";
-
+          coffee.style.opacity = "0"
           anime({
               targets: krishka,
               translateY: 105,

@@ -549,7 +549,7 @@ a{
     }
     
     .coffee{
-        height: 150px;
+        height: 153px;
         width: 10px;
         background-color: #532700;
         position: absolute;
@@ -595,5 +595,10 @@ a{
         position: absolute;
         left: 500px;
         bottom: 243px;
+    }
+
+    .coffee-button{
+        position: absolute;
+        left: -40px;
     }
 }
