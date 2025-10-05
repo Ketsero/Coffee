@@ -10,6 +10,27 @@
 </head>
 <body>
     <main>
+        <div id="cart-modal" class="modal hidden">
+            <div class="modal-content cart">
+              <h2>Ваш кошик</h2>
+              <ul id="cart-list"></ul>
+              <button id="checkout-btn">Оформити замовлення</button>
+              <button id="close-cart" class="modal-close-btn">Закрити</button>
+            </div>
+          </div>
+          <template id="card-template">
+            <article class="card">
+              <img class="card__img" alt="" />
+              <div class="card__body">
+                <h2 class="card__title"></h2>
+                <p class="card__desc"></p>
+                <div class="card__footer">
+                  <span class="card__price"></span>
+                  <button class="card__btn">Buy</button>
+                </div>
+              </div>
+            </article>
+          </template>
         <div class="stick">
             <div class="stick-1"></div>
             <div class="stick-2"></div>
