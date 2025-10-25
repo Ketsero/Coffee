@@ -470,7 +470,7 @@ input {
 }
 
 .image-container:hover .product-overlay {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .image-container:hover .img {
