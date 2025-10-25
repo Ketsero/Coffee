@@ -1,95 +1,123 @@
-let cooked = document.querySelector(".cooked")
-let notcooked = document.querySelector(".notcooked")
-let button = document.querySelector(".button")
-let coffee = document.querySelector(".coffee")
-let krishka = document.querySelector(".krishka")
-let divs = document.querySelectorAll(".div")
-let image = document.querySelector(".img")
+let cooked = document.querySelector(".cooked");
+let notcooked = document.querySelector(".notcooked");
+let button = document.querySelector(".button");
+let coffee = document.querySelector(".coffee");
+let krishka = document.querySelector(".krishka");
+let divs = document.querySelectorAll(".div");
+let image = document.querySelector(".img");
 
-button.addEventListener('click', function() {
+button.addEventListener("click", function () {
   anime({
-      targets: coffee,
-      translateY: 200,
-      duration: 2000,
-      easing: 'easeInOutQuad',
-      complete: () => {
-          notcooked.style.opacity = "0";
-          cooked.style.opacity = "1";
+    targets: coffee,
+    translateY: 200,
+    duration: 2000,
+    easing: "easeInOutQuad",
+    complete: () => {
+      notcooked.style.opacity = "0";
+      cooked.style.opacity = "1";
 
-          krishka.style.zIndex = "2";
-          coffee.style.opacity = "0"
-          anime({
-              targets: krishka,
-              translateY: 105,
-              rotate: 360,
-              duration: 2000,
-              easing: 'easeOutQuad'
-          });
-      }
+      krishka.style.zIndex = "2";
+      coffee.style.opacity = "0";
+      anime({
+        targets: krishka,
+        translateY: 105,
+        rotate: 360,
+        duration: 2000,
+        easing: "easeOutQuad",
+      });
+    },
   });
 });
 
-let menu_button = document.querySelector('.stick')
-let one_button = document.querySelector('.stick-1')
-let two_button = document.querySelector('.stick-2')
-let menu = document.querySelector('.navigation')
-let hideTimeout;
+// Система замовлення
+let buy_div = document.querySelector(".buy_div");
+let buy_btn = document.querySelector(".buy-btn");
+let phone_input = document.querySelector(".number");
+let name_input = document.querySelector(".name");
 
-menu_button.addEventListener('mouseenter', () => {
-    clearTimeout(hideTimeout);
-    menu.style.opacity = "1";
-    menu.style.transition = "500ms";
-    menu.style.zIndex = "3";
-});
-
-menu_button.addEventListener('mouseleave', () => {
-    hideTimeout = setTimeout(() => {
-        if (!menu.matches(':hover')) {
-            menu.style.opacity = "0";
-            menu.style.transition = "2s";
-            menu.style.zIndex = "-1";
-        }
-    }, 300);
-});
-
-menu.addEventListener('mouseenter', () => {
-    clearTimeout(hideTimeout);
-    menu.style.opacity = "1";
-    menu.style.transition = "500ms";
-    menu.style.zIndex = "3";
-});
-
-menu.addEventListener('mouseleave', () => {
-    hideTimeout = setTimeout(() => {
-        if (!menu_button.matches(':hover')) {
-            menu.style.opacity = "0";
-            menu.style.transition = "2s";
-            menu.style.zIndex = "-1";
-        }
-    }, 300);
-});
-
-let buttons = document.querySelectorAll('.buttons');
-let buy_div = document.querySelector('.buy_div');
-let buy_btn = document.querySelector('.buy-btn');
-
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    buy_div.style.zIndex = "3";
-    buy_div.style.opacity = "1";
-  });
-});
-
-let phone_input = document.querySelector('.number');
-
-buy_btn.addEventListener('click', () => {
-    let phone = phone_input.value;
-    if (phone.length < 13) {
-        alert("Будь ласка, введіть повний номер телефону");
+// ДЕЛЕГУВАННЯ ПОДІЙ для кнопок "Придбати"
+document.addEventListener("click", function (e) {
+  // Перевіряємо, чи клікнули на кнопку "Придбати" або її батьківський елемент
+  if (e.target.classList.contains("buttons") || e.target.closest(".buttons")) {
+    if (buy_div) {
+      buy_div.style.zIndex = "100";
+      buy_div.style.opacity = "1";
+      // Додаємо клас для блокування прокрутки body
+      document.body.style.overflow = "hidden";
     }
-    else {
-    alert("Ваша заявка відправлена продавцю!")
+  }
+});
+
+// Закриття форми при кліку поза нею
+document.addEventListener("click", function (e) {
+  if (
+    buy_div &&
+    buy_div.style.opacity === "1" &&
+    !buy_div.contains(e.target) &&
+    !e.target.classList.contains("buttons") &&
+    !e.target.closest(".buttons")
+  ) {
+    closeOrderForm();
+  }
+});
+
+// Функція закриття форми
+function closeOrderForm() {
+  if (buy_div) {
     buy_div.style.zIndex = "-3";
     buy_div.style.opacity = "0";
-    }
+    document.body.style.overflow = "";
+  }
+}
+
+let menu_button = document.querySelector(".stick");
+let one_button = document.querySelector(".stick-1");
+let two_button = document.querySelector(".stick-2");
+let menu = document.querySelector(".navigation");
+let hideTimeout;
+
+menu_button.addEventListener("mouseenter", () => {
+  clearTimeout(hideTimeout);
+  menu.style.opacity = "1";
+  menu.style.transition = "500ms";
+  menu.style.zIndex = "3";
 });
+
+menu_button.addEventListener("mouseleave", () => {
+  hideTimeout = setTimeout(() => {
+    if (!menu.matches(":hover")) {
+      menu.style.opacity = "0";
+      menu.style.transition = "2s";
+      menu.style.zIndex = "-1";
+    }
+  }, 300);
+});
+
+menu.addEventListener("mouseenter", () => {
+  clearTimeout(hideTimeout);
+  menu.style.opacity = "1";
+  menu.style.transition = "500ms";
+  menu.style.zIndex = "3";
+});
+
+menu.addEventListener("mouseleave", () => {
+  hideTimeout = setTimeout(() => {
+    if (!menu_button.matches(":hover")) {
+      menu.style.opacity = "0";
+      menu.style.transition = "2s";
+      menu.style.zIndex = "-1";
+    }
+  }, 300);
+});
+
+// Обробка форми замовлення
+if (buy_btn && phone_input && name_input) {
+  buy_btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    let phone = phone_input.value.trim();
+    let name = name_input.value.trim();
+
+    alert(`Вітаю ${name}! Ваше замовлення передано в службу доставки.
+          З вами звʼяжуться за номером ${phone}.`);
+  });
+}

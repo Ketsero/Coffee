@@ -1,149 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="google-site-verification" content="AS3wGxCCZF235Otseirz2USEYunBpAArE1ACRbgSrzA" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Магазин кави</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 </head>
+
 <body>
     <main>
         <div class="stick">
             <div class="stick-1"></div>
             <div class="stick-2"></div>
-            </div>
-            <section class="buy_div">
-                <label class="number-text" for="tel">Введіть свій номер телефону</label>
-                <input class="number" type="tel" value="+380">
-                <label class="name-text" for="text">Введіть своє ПІБ</label>
-                <input class="name" type="text">
-                <button class="buy-btn">Придбати</button>
-            </section>
+        </div>
+        <section class="buy_div">
+            <label class="number-text" for="tel">Введіть свій номер телефону</label>
+            <input class="number" type="tel" value="+380" />
+            <label class="name-text" for="text">Введіть своє ПІБ</label>
+            <input class="name" type="text" />
+            <button class="buy-btn">Придбати</button>
+        </section>
         <section id="home">
-            <img class="coffee_img" src="coffe.png">
+            <img class="coffee_img" src="./img/coffe.png" />
             <h1 class="start_h1">Розпочніть свою захопливу кавову подорож</h1>
-            <div class="start"><button class="start_button"><a href="#coffee_cook"><img class="start_img" src="arrow.png"></a></button></div>
+            <div class="start">
+                <button class="start_button">
+                    <a href="#coffee_cook"><img class="start_img" src="./img/arrow.png" /></a>
+                </button>
+            </div>
         </section>
         <article id="coffee_cook" class="coffee_bean_cook">
             <h1 class="coffee_cook">Все про каву</h1>
-            <p>Виробництво кави — це складний і багатоетапний процес, який починається на плантації і завершується у вашій чашці</p>
+            <p>
+                Виробництво кави — це складний і багатоетапний процес, який
+                починається на плантації і завершується у вашій чашці
+            </p>
             <h2>Все що вам потрібно знати про каву:</h2>
             <ol>
-                <li>Кава росте на кавових деревах, переважно в тропічних регіонах. Основними її сортами є Арабіка (м’якіша, ароматна) та Робуста (міцніша, з більшою кількістю кофеїну)</li>
-                <li>Обробка кавових ягід поділяєься на  Митий(вологий, дає чистий смак із яскравою кислинкою.) і  Сухий (натуральний, дає солодший, насичений смак) методи.</li>
-                <li>Зерна сушать на сонці або в сушарках, видаляють залишки шкірки, камінці, дефектні зерна</li>
-                <li>На цьому етапі кава ще не обсмажена — вона зелена, тому зерна обсмажують при температурі 180–240°C</li>
-                <li>Щоб зберегти аромат, каву пакують у вакуум або спеціальні пакети з клапанами</li>
+                <li>
+                    Кава росте на кавових деревах, переважно в тропічних регіонах.
+                    Основними її сортами є Арабіка (м’якіша, ароматна) та Робуста
+                    (міцніша, з більшою кількістю кофеїну)
+                </li>
+                <li>
+                    Обробка кавових ягід поділяєься на Митий(вологий, дає чистий смак із
+                    яскравою кислинкою.) і Сухий (натуральний, дає солодший, насичений
+                    смак) методи.
+                </li>
+                <li>
+                    Зерна сушать на сонці або в сушарках, видаляють залишки шкірки,
+                    камінці, дефектні зерна
+                </li>
+                <li>
+                    На цьому етапі кава ще не обсмажена — вона зелена, тому зерна
+                    обсмажують при температурі 180–240°C
+                </li>
+                <li>
+                    Щоб зберегти аромат, каву пакують у вакуум або спеціальні пакети з
+                    клапанами
+                </li>
                 <li>І нарешті: кава вариться в вашій кавоварці</li>
             </ol>
-            <div class="coffee-beans"><img class="beans" src="coffee_beans-removebg-preview.png"></div>
+            <div class="coffee-beans">
+                <img class="beans" src="./img/coffee_beans-removebg-preview.png" />
+            </div>
         </article>
         <article id="buy-article" class="buy-article">
             <h1>Смачна кава, яку можна придбати. Доставка прямо до дверей!</h1>
-            <div style="position: relative; height: 1px;">
-            <div class=" div div-1">
-                <h1 class="h1">"Magiegenius Elixir"</h1>
-                <p class="coffee-p">Таємнича чорна коробка з еліксиром кави, що обіцяє магічний смак і енергію для вашого дня.</p>
-                <button class="buttons">Придбати</button>
+
+            <div class="products-container">
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (1).jpg" alt="Magiegenius Elixir кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Magiegenius Elixir"</h3>
+                            <p class="coffee-p">
+                                Таємнича чорна коробка з еліксиром кави, що обіцяє магічний смак і
+                                енергію для вашого дня.
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (2).jpg" alt="Ogisonektu Prestige кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Ogisonektu Prestige"</h3>
+                            <p class="coffee-p">
+                                Елегантна коричнева коробка з преміальною кавою, що втілює розкіш
+                                і вишуканий смак.
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (3).jpg" alt="Nativen Elixir Supreme кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Nativen Elixir Supreme"</h1>
+                                <p class="coffee-p">
+                                    Стильна сіра коробка з вишуканою кавою, що дарує насичений смак і
+                                    незабутній аромат.
+                                </p>
+                                <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (4).jpg" alt="Midnight Essence кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Midnight Essence"</h3>
+                            <p class="coffee-p">
+                                Елегантна чорна упаковка з кавою, що дарує глибокий смак і
+                                ідеально підходить для вечірнього відпочинку.
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (5).jpg" alt="Sonfynger Elixir кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Sonfynger Elixir"</h3>
+                            <p class="coffee-p">
+                                Стильна кава з насиченим смаком і елегантним дизайном для
+                                особливих моментів
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (6).jpg" alt="Davon Elixir кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Davon Elixir"</h3>
+                            <p class="coffee-p">
+                                Елегантна біло-коричнева кава з насиченим смаком для особливих
+                                моментів і повсякденного задоволення
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (7).jpg" alt="Asmør da Collection кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Asmør da Collection"</h3>
+                            <p class="coffee-p">
+                                Унікальний набір коробок з кавою для різноманітних смаків і
+                                настроїв у будь-який час дня
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (8).jpg" alt="Before Order Coffee кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Before Order Coffee"</h3>
+                            <p class="coffee-p">
+                                Класична кава з теплим смаком для затишних ранків і комфортних
+                                вечорів
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (9).jpg" alt="Coffee Conce кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Coffee Conce"</h3>
+                            <p class="coffee-p">
+                                Затишна кава з теплим смаком для щоденного вжитку і приємних
+                                чудесних пауз
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container">
+                        <img class="img" src="./img/image (10).jpg" alt="Bukednn Coffee кава" />
+                        <div class="product-overlay">
+                            <h3 class="h1">"Bukednn Coffee"</h3>
+                            <p class="coffee-p">
+                                Преміальна кава з насиченим смаком для особливих моментів разом зі
+                                сім'єю
+                            </p>
+                            <button class="buttons">Придбати</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class=" div div-2">
-                <h1 class="h1">"Ogisonektu Prestige"</h1>
-                <p class="coffee-p">Елегантна коричнева коробка з преміальною кавою, що втілює розкіш і вишуканий смак.</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class=" div div-3">
-                <h1 class="h1">"Nativen Elixir Supreme"</h1>
-                <p class="coffee-p">Стильна сіра коробка з вишуканою кавою, що дарує насичений смак і незабутній аромат.</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class=" div div-4">
-                <h1 class="h1">"Midnight Essence"</h1>
-                <p class="coffee-p">Елегантна чорна упаковка з кавою, що дарує глибокий смак і ідеально підходить для вечірнього відпочинку.</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class=" div div-5">
-                <h1 class="h1">"Sonfynger Elixir"</h1>
-                <p class="coffee-p">Стильна кава з насиченим смаком і елегантним дизайном для особливих моментів</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class=" div div-6">
-                <h1 class="h1">"Davon Elixir"</h1>
-                <p class="coffee-p">Елегантна біло-коричнева кава з насиченим смаком для особливих моментів і повсякденного задоволення</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class="div div-7">
-                <h1 class="h1">"Asmør da Collection"</h1>
-                <p class="coffee-p">Унікальний набір коробок з кавою для різноманітних смаків і настроїв у будь-який час дня</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class=" div div-8">
-                <h1 class="h1">"Before Order Coffee"</h1>
-                <p class="coffee-p">Класична кава з теплим смаком для затишних ранків і комфортних вечорів</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class=" div div-9">
-                <h1 class="h1">"Coffee Conce"</h1>
-                <p class="coffee-p">Затишна кава з теплим смаком для щоденного вжитку і приємних чудесних пауз</p>
-                <button class="buttons">Придбати</button>
-            </div>
-            <div class=" div div-10">
-                <h1 class="h1">"Bukednn Coffee"</h1>
-                <p class="coffee-p">Преміальна кава з насиченим смаком для особливих моментів разом зі сім'єю</p>
-                <button class="buttons">Придбати</button>
-            </div>
-        </div>
-            <div class="grid">
-            <div class="image-div">
-                <img class="img" src="image (1).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (2).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (3).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (4).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (5).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (6).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (7).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (8).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (9).jpg">
-            </div>
-            <div class="image-div">
-                <img class="img"  src="image (10).jpg">
-            </div>
-        </div>
         </article>
+
         <article id="coffee_cup" class="coffee_cup">
             <h1>Спробуйте і приготуйте каву самі!</h1>
-            <div><img class="cup" src="Group 7 (1).png"></div>
-            <div class="notcooked-div"><img class="notcooked" src="Ellipse 1 (1).png" alt=""></div>
-            <div class="cooked-div"><img class="cooked" src="Ellipse 2.png" alt=""></div>
-            <div class="coffee-div"><div class="coffee"></div></div>
-            <div class="coffee-button"><button class="button"><img src="button_on.png" class="turn_on"></button></div>
-            <div class="coffee-krishka"><img src="Group 5 (1).png" class="krishka"></div>
+            <div><img class="cup" src="./img/Group 7 (1).png" /></div>
+            <div class="notcooked-div">
+                <img class="notcooked" src="./img/Ellipse 1 (1).png" alt="" />
+            </div>
+            <div class="cooked-div">
+                <img class="cooked" src="./img/Ellipse 2.png" alt="" />
+            </div>
+            <div class="coffee-div">
+                <div class="coffee"></div>
+            </div>
+            <div class="coffee-button">
+                <button class="button">
+                    <img src="./img/button_on.png" class="turn_on" />
+                </button>
+            </div>
+            <div class="coffee-krishka">
+                <img src="./img/Group 5 (1).png" class="krishka" />
+            </div>
         </article>
+        
         <div class="navigation">
-            <button class="nav-button button-1"><a href="#home">На головну</a></button>
-            <button class="nav-button button-2"><a href="#coffee_cook">Опис</a></button>
-            <button class="nav-button button-3"><a href="#buy-article">Придбати каву</a></button>
-            <button class="nav-button button-4"><a href="#coffee_cup">Створити свою каву</a></button>
-    </div>
+            <button class="nav-button button-1">
+                <a href="#home">На головну</a>
+            </button>
+            <button class="nav-button button-2">
+                <a href="#coffee_cook">Опис</a>
+            </button>
+            <button class="nav-button button-3">
+                <a href="#buy-article">Придбати каву</a>
+            </button>
+            <button class="nav-button button-4">
+                <a href="#coffee_cup">Створити свою каву</a>
+            </button>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="my.js"></script>
 </body>
+
 </html>

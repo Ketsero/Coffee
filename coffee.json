@@ -3,70 +3,70 @@
         "id": 1,
         "title": "Magiegenius Elixir",
         "price": 600,
-        "image": "image (1).jpg",
+        "image": "./img/image (1).jpg",
         "description": "Таємнича чорна коробка з еліксиром кави, що обіцяє магічний смак і енергію для вашого дня."
     },
     {
         "id": 2,
         "title": "Ogisonektu Prestige",
         "price": 650,
-        "image": "image (2).jpg",
+        "image": "./img/image (2).jpg",
         "description": "Елегантна коричнева коробка з преміальною кавою, що втілює розкіш і вишуканий смак."
     },
     {
         "id": 3,
         "title": "Nativen Elixir Supreme",
         "price": 700,
-        "image": "image (3).jpg",
+        "image": "./img/image (3).jpg",
         "description": "Стильна сіра коробка з вишуканою кавою, що дарує насичений смак і незабутній аромат."
     },
     {
         "id": 4,
         "title": "Midnight Essence",
         "price": 556,
-        "image": "image (4).jpg",
+        "image": "./img/image (4).jpg",
         "description": "Елегантна чорна упаковка з кавою, що дарує глибокий смак і ідеально підходить для вечірнього відпочинку."
     },
     {
         "id": 5,
         "title": "Sonfynger Elixir",
         "price": 692,
-        "image": "image (5).jpg",
+        "image": "./img/image (5).jpg",
         "description": "Стильна кава з насиченим смаком і елегантним дизайном для особливих моментів."
     },
     {
         "id": 6,
         "title": "Davon Elixir",
         "price": 520,
-        "image": "image (6).jpg",
+        "image": "./img/image (6).jpg",
         "description": "Елегантна біло-коричнева кава з насиченим смаком для особливих моментів і повсякденного задоволення."
     },
     {
         "id": 7,
         "title": "Asmør da Collection",
         "price": 660,
-        "image": "image (7).jpg",
+        "image": "./img/image (7).jpg",
         "description": "Унікальний набір коробок з кавою для різноманітних смаків і настроїв у будь-який час дня."
     },
     {
         "id": 8,
         "title": "Before Order Coffee",
         "price": 580,
-        "image": "image (8).jpg",
+        "image": "./img/image (8).jpg",
         "description": "Класична кава з теплим смаком для затишних ранків і комфортних вечорів."
     },
     {
         "id": 9,
         "title": "Coffee Conce",
         "price": 750,
-        "image": "image (9).jpg",
+        "image": "./img/image (9).jpg",
         "description": "Затишна кава з теплим смаком для щоденного вжитку і приємних чудесних пауз."
     },
     {
         "id": 10,
         "title": "Bukednn Coffee",
         "price": 600,
-        "image": "image (10).jpg",
+        "image": "./img/image (10).jpg",
         "description": "Преміальна кава з насиченим смаком для особливих моментів разом зі сім'єю."
     }
 ]
